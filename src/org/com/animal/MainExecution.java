@@ -1,3 +1,5 @@
+//POC added
+
 package org.com.animal;
 
 import java.io.IOException;
@@ -140,6 +142,15 @@ public class MainExecution {
 		System.out.println("Count of Animal who can walk :- "+ walk);
 		System.out.println("Count of Animal who can sing :- "+ sing);
 		System.out.println("Count of Animal who can fly :- "+ fly);
+		
+		
+		System.out.println("\n\nAs part of the POC we have used Locale to Locale to read the");
+		System.out.println(" diferent value fo the Rooster sound based on the english Phrase ");
+		//Bonus
+		Locale currentLocale = new Locale("da", "DA");
+		ResourceBundle bundle = ResourceBundle.getBundle("voiceName", currentLocale);
+		System.out.println(bundle.getString("CANADA"));
+		
 		
 	}
 
